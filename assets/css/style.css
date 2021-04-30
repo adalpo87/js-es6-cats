@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#main-wrapper{
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+#mailes-1 h2{
+    text-align: center;
+}
+
+#mailes-1 ul{
+    list-style: none;   
+}
+
+#mailes-1 ul li{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
