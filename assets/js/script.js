@@ -108,14 +108,20 @@ maleCats.forEach((cat)=>{
 femaleCats.forEach((cat)=>{
     $('#mailes-2-female ul').append(textGenerator(cat.name, cat.color, cat.ribbon.color, cat.ribbon.opacity));
 })
-
+console.log(femaleCats);
 
 /* Milestone 3
 Creare un nuovo array con prima tutti i gattini femmina e poi tutti i gattini maschio,
- inserendo solamente nome e colore e colore e opacità del fiocco per ogni gatto. */
+ inserendo solamente nome, colore e opacità del fiocco per ogni gatto. */
 
+const orderedCats = [...femaleCats, ...maleCats];
+console.log(orderedCats);
 
+orderedCats.forEach((cat)=>{
 
+    $('#mailes-3 ul').append(textGenerator(cat.name, cat.color, cat.ribbon.color ,cat.ribbon.opacity));
+
+})
 
 
 
